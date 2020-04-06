@@ -6,4 +6,8 @@
   
  Run it with docker-compose ./run.sh
 
+ Access:
+ http://localhost:9595/web/index.jsf
+
+
 ![Image description](message.png)
