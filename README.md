@@ -6,4 +6,4 @@
   
  Run it with docker-compose ./run.sh
 
-![Image description](message.jpg)
+![Image description](message.png)
