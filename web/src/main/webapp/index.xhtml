@@ -21,13 +21,15 @@
 
             <br/>
             <p:inputText value="#{redisBean.message}" id="secret"/>
+            
+            
+            <br/><br/><br/>
+            <h:outputText value="Token is: #{redisBean.token}" id="tokenValue" />
+
 
             <br/><br/><br/>
-            <p:commandButton action="#{redisBean.saveMessage()}" value="Save and generate Token"/>
+            <p:commandButton action="#{redisBean.doAction()}" ajax="true" update="tokenValue" value="Save and generate Token"/>
 
-
-            <br/><br/><br/>
-            <p:inputText value="#{redisBean.token}" id="token" />
 
         </h:form>
         <hr/>

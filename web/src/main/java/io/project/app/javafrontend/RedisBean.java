@@ -37,7 +37,7 @@ public class RedisBean implements Serializable {
     
     
 
-    public void saveMessage() {
+    public String doAction() {
         try{
             token = UUID.randomUUID().toString().replace("-", "");
         
@@ -48,7 +48,7 @@ public class RedisBean implements Serializable {
             e.printStackTrace();
         }
         
-
+       return null;
     }
 
     public void findMessage() {
